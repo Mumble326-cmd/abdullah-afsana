@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Join us to celebrate the wedding of Abdullah and Afsana, 20 November 2026, Dhaka.">
+<meta property="og:title" content="Abdullah &amp; Afsana">
+<meta property="og:description" content="Friday, 20 November 2026 · The Palm View, Army Golf Club, Dhaka">
+<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+<title>Abdullah &amp; Afsana</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Figtree:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one narrow column; envelope and pleated curtain intro; garnet hero with gold-foil names; centred invitation sections; gold kept to foil, rules, eyebrows and actions */
+:root{
+  --bg:#F8F3F1; --surface:#FFFFFF; --tint:#F4E8E5; --fg:#2A1416; --muted:#7A5C5E; --line:#E8D9D6;
+  --band:#6B1424; --band-fg:#F8EEE6; --accent:#8C6420; --accent-strong:#C9A24A; --accent-fg:#2A1A08; --head:#6B1424;
+  --gold:#C9A24A; --gold-hi:#F7E6A8; --gold-lo:#9A7426; --paper:#F6EDE2; --paper-2:#EBDCC8; --paper-edge:#DCC8AE; --wax-text:#4E0D18;
+  --display:"Gloock", Georgia, "Times New Roman", serif;
+  --body:"Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:"DM Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#1A0C0F; --surface:#251317; --tint:#311A1F; --fg:#F2E6E2; --muted:#B79C9A; --line:#3C2328;
+  --band:#4A0C17; --band-fg:#F8EEE6; --accent:#D6B266; --accent-strong:#D6B266; --accent-fg:#2A1A08; --head:#F0D6D0; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#1A0C0F; --surface:#251317; --tint:#311A1F; --fg:#F2E6E2; --muted:#B79C9A; --line:#3C2328;
+  --band:#4A0C17; --band-fg:#F8EEE6; --accent:#D6B266; --accent-strong:#D6B266; --accent-fg:#2A1A08; --head:#F0D6D0; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:16px/1.65 var(--body)}
+.wrap{max-width:640px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+:focus-visible{outline:2px solid var(--accent-strong);outline-offset:3px}
+
+/* Gold foil */
+.foil{background:linear-gradient(110deg,var(--gold) 0%,var(--gold) 38%,var(--gold-hi) 48%,#FFF6D6 50%,var(--gold-hi) 52%,var(--gold) 62%,var(--gold) 100%);
+  background-size:260% 100%;background-position:100% 0;-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+@keyframes sweep{0%{background-position:100% 0}55%,100%{background-position:0% 0}}
+body.opened .hero .foil{animation:sweep 5s ease-in-out 1.6s infinite}
+
+/* Hero */
+.hero{background:var(--band);color:var(--band-fg)}
+.hero .wrap{padding-block:76px 60px;display:grid;gap:18px}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(46px,12.5vw,80px);line-height:1;margin:0;text-wrap:balance}
+h1 span{display:block;font-size:.45em;margin:10px 0}
+.when{font:500 13px/1.5 var(--mono);letter-spacing:.14em;text-transform:uppercase;margin:0;opacity:.9}
+.count{display:flex;gap:22px;flex-wrap:wrap;margin-top:8px}
+.count div{display:grid}
+.count b{font:500 30px/1 var(--mono);font-variant-numeric:tabular-nums;color:var(--gold-hi)}
+.count small{font:12px var(--mono);letter-spacing:.08em;text-transform:uppercase;opacity:.7}
+
+/* Sections */
+section{padding-block:60px;border-bottom:1px solid var(--line)}
+.eyebrow{font:500 12px var(--mono);letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin:0 0 14px}
+h2{font-family:var(--display);font-weight:400;font-size:clamp(30px,8vw,44px);line-height:1.08;margin:0 0 18px;color:var(--head);text-wrap:balance}
+.centred{text-align:center;display:grid;justify-items:center}
+.centred p{max-width:44ch}
+.body{margin:0 0 14px}
+.muted{color:var(--muted)}
+.sign{font-family:var(--display);font-size:26px;color:var(--accent);margin:10px 0 0}
+.venue-name{font-size:clamp(34px,10vw,54px)}
+.hours{font:500 15px var(--mono);font-variant-numeric:tabular-nums;margin:0 0 6px}
+.orn{display:flex;align-items:center;gap:14px;margin:22px 0 0;color:var(--accent-strong)}
+.orn::before,.orn::after{content:"";width:72px;height:1px;background:var(--line)}
+.orn svg{width:16px;height:16px}
+
+/* Buttons and dropdown panels */
+.actions{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:22px}
+.btn-line{display:inline-flex;align-items:center;gap:10px;border:1.5px solid var(--head);color:var(--head);background:transparent;cursor:pointer;
+  font:500 12px var(--mono);letter-spacing:.16em;text-transform:uppercase;padding:15px 22px;transition:background .25s,color .25s}
+.btn-line:hover,.btn-line[aria-expanded="true"]{background:var(--head);color:var(--bg)}
+.chev{width:10px;height:10px;transition:transform .35s ease}
+.btn-line[aria-expanded="true"] .chev{transform:rotate(180deg)}
+.drop-panel{display:grid;grid-template-rows:0fr;opacity:0;transition:grid-template-rows .45s cubic-bezier(.2,.7,.2,1),opacity .3s ease;width:100%;max-width:380px}
+.drop-panel.open{grid-template-rows:1fr;opacity:1}
+.drop-inner{overflow:hidden;min-height:0}
+.drop-list{list-style:none;margin:14px 0 2px;padding:6px;border:1px solid var(--line);border-top:2px solid var(--accent-strong);background:var(--surface);border-radius:8px;text-align:left}
+.drop-list li{opacity:0;transform:translateY(-6px);transition:opacity .3s ease,transform .3s ease}
+.drop-panel.open li{opacity:1;transform:none}
+.drop-panel.open li:nth-child(2){transition-delay:.06s}.drop-panel.open li:nth-child(3){transition-delay:.12s}.drop-panel.open li:nth-child(4){transition-delay:.18s}
+.drop-list a,.drop-list button{display:flex;justify-content:space-between;align-items:center;gap:12px;width:100%;padding:12px 14px;border-radius:6px;color:var(--fg);
+  text-decoration:none;font:500 15px var(--body);background:none;border:0;cursor:pointer;text-align:left}
+.drop-list a:hover,.drop-list button:hover{background:var(--tint)}
+.drop-list .hint{font:12px var(--mono);color:var(--muted)}
+.drop-list .info{padding:10px 14px;font-size:14px;color:var(--muted)}
+
+/* Forms */
+form{display:grid;gap:14px;width:100%;text-align:left;margin-top:10px}
+label{display:grid;gap:6px;font-weight:500;font-size:14px}
+input,select,textarea{font:inherit;color:var(--fg);background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:10px 12px;width:100%}
+input[aria-invalid="true"]{border-color:var(--accent)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.solid{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--accent-strong);color:var(--accent-fg);border:0;cursor:pointer;
+  font:600 15px var(--body);border-radius:6px;padding:13px 22px;justify-self:start}
+.solid:disabled{opacity:.6;cursor:default}
+.small{font-size:13px;margin:0}
+.thanks{background:var(--surface);border:1px solid var(--line);border-top:2px solid var(--accent-strong);border-radius:6px;padding:20px;max-width:44ch;margin-top:10px;animation:rise .6s ease both}
+
+/* Photos */
+.pick{display:grid;place-items:center;gap:4px;border:1.5px dashed var(--accent-strong);border-radius:8px;padding:26px 16px;text-align:center;cursor:pointer;background:var(--surface);font-weight:500}
+.pick input{position:absolute;width:1px;height:1px;opacity:0}
+.pick:focus-within{outline:2px solid var(--accent-strong);outline-offset:3px}
+.bar{height:4px;background:var(--line);border-radius:2px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--accent-strong);transition:width .4s ease}
+.locked{border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:16px 18px;max-width:44ch}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px;width:100%;margin-top:28px}
+.gallery button{padding:0;border:0;background:var(--tint);border-radius:4px;overflow:hidden;cursor:zoom-in;aspect-ratio:1}
+.gallery img{width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.04);transition:opacity .6s ease,transform .8s ease}
+.gallery img.in{opacity:1;transform:none}
+.lightbox{position:fixed;inset:0;z-index:60;background:rgba(20,6,9,.92);display:grid;place-items:center;padding:24px;opacity:0;transition:opacity .3s ease}
+.lightbox.show{opacity:1}
+.lightbox img{max-width:100%;max-height:88vh;border-radius:4px;transform:scale(.96);transition:transform .35s ease}
+.lightbox.show img{transform:none}
+.lightbox button{position:absolute;top:calc(12px + env(safe-area-inset-top,0px));right:calc(12px + env(safe-area-inset-right,0px));background:none;border:1px solid rgba(255,255,255,.4);color:#fff;border-radius:999px;padding:8px 14px;font:500 12px var(--mono);letter-spacing:.1em;cursor:pointer}
+@media(max-width:480px){.row{grid-template-columns:1fr}}
+footer{padding-block:32px;text-align:center;color:var(--muted);font:13px var(--mono)}
+
+/* Intro: envelope, then curtain (one fixed look in both themes) */
+.intro{position:fixed;inset:0;z-index:50;display:grid;place-items:center;overflow:hidden}
+.panel{position:absolute;top:0;bottom:0;width:50.5%;
+  background:linear-gradient(180deg,rgba(0,0,0,.25),transparent 18%,transparent 82%,rgba(0,0,0,.35)),
+    repeating-linear-gradient(90deg,rgba(255,255,255,.05) 0 2px,transparent 2px 22px,rgba(0,0,0,.18) 22px 30px,transparent 30px 44px),#6B1424;
+  transition:transform 1.6s cubic-bezier(.7,0,.2,1),border-radius 1.6s cubic-bezier(.7,0,.2,1);will-change:transform}
+.panel.l{left:0;transform-origin:left top;box-shadow:inset -14px 0 24px rgba(0,0,0,.35)}
+.panel.r{right:0;transform-origin:right top;box-shadow:inset 14px 0 24px rgba(0,0,0,.35)}
+.panel::after{content:"";position:absolute;top:0;bottom:0;width:3px;background:var(--gold);opacity:.85}
+.panel.l::after{right:0}.panel.r::after{left:0}
+.intro.opening .panel.l{transform:translateX(-104%) skewY(-2deg) scaleX(.7);border-bottom-right-radius:40% 12%}
+.intro.opening .panel.r{transform:translateX(104%) skewY(2deg) scaleX(.7);border-bottom-left-radius:40% 12%}
+.intro.gone{display:none}
+.stage{position:relative;z-index:2;display:grid;justify-items:center;gap:22px;transition:opacity .6s ease,transform .6s ease;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.intro.opening .stage{opacity:0;transform:translateY(-24px) scale(.97)}
+.tap{font:500 12px var(--mono);letter-spacing:.18em;text-transform:uppercase;color:#F8EEE6;opacity:.75;margin:0;transition:opacity .3s}
+.intro.env-open .tap{opacity:0}
+.env{position:relative;width:min(300px,78vw);aspect-ratio:3/2;perspective:1000px;cursor:pointer}
+.env-back{position:absolute;inset:0;background:var(--paper-2);border-radius:4px;box-shadow:0 22px 44px rgba(0,0,0,.4)}
+.card{position:absolute;left:7%;right:7%;top:7%;height:86%;background:#FFFDF8;border:1px solid var(--paper-edge);border-radius:3px;
+  display:grid;place-content:center;text-align:center;gap:8px;z-index:1;transition:transform .9s cubic-bezier(.2,.7,.2,1) .8s}
+.card small{font:500 10px var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--gold-lo)}
+.card b{font:400 22px/1.1 var(--display);color:#6B1424}
+.env-front{position:absolute;inset:0;background:linear-gradient(180deg,var(--paper),var(--paper-2));clip-path:polygon(0 0,50% 54%,100% 0,100% 100%,0 100%);z-index:2;border-radius:4px}
+.flap{position:absolute;left:0;right:0;top:0;height:60%;background:linear-gradient(180deg,var(--paper),#E9D8C2);clip-path:polygon(0 0,100% 0,50% 100%);
+  transform-origin:top;transition:transform .75s cubic-bezier(.6,0,.3,1) .25s;z-index:3;backface-visibility:visible}
+.seal{position:absolute;left:50%;top:60%;width:66px;height:66px;margin:-33px 0 0 -33px;border-radius:50%;border:0;z-index:4;cursor:pointer;
+  background:radial-gradient(circle at 34% 30%,var(--gold-hi),var(--gold) 55%,var(--gold-lo));display:grid;place-items:center;
+  font:400 19px var(--display);color:var(--wax-text);box-shadow:0 4px 10px rgba(0,0,0,.35),inset 0 0 0 3px rgba(255,255,255,.2),inset 0 0 0 6px rgba(154,116,38,.35);
+  transition:transform .35s ease,opacity .35s ease}
+.seal:hover{transform:scale(1.06)}
+@keyframes pulse{0%,100%{box-shadow:0 4px 10px rgba(0,0,0,.35),0 0 0 0 rgba(247,230,168,.45),inset 0 0 0 3px rgba(255,255,255,.2)}50%{box-shadow:0 4px 10px rgba(0,0,0,.35),0 0 0 12px rgba(247,230,168,0),inset 0 0 0 3px rgba(255,255,255,.2)}}
+.seal{animation:pulse 2.4s ease-in-out infinite}
+.intro.env-open .seal{transform:scale(1.3);opacity:0;animation:none}
+.intro.env-open .flap{transform:rotateX(180deg)}
+.intro.flap-back .flap{z-index:0}
+.intro.env-open .card{transform:translateY(-66%)}
+
+/* Petals */
+#petals{position:fixed;inset:0;width:100%;height:100%;z-index:45;pointer-events:none}
+
+/* Entrance and scroll reveals */
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+body.opened .hero .wrap>*{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+body.opened .hero .wrap>*:nth-child(2){animation-delay:.15s}
+body.opened .hero .wrap>*:nth-child(3){animation-delay:.3s}
+body.opened .hero .wrap>*:nth-child(4){animation-delay:.45s}
+body.opened .hero h1.foil{animation:rise .9s cubic-bezier(.2,.7,.2,1) .15s both,sweep 5s ease-in-out 1.8s infinite}
+.reveal{transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.reveal.pre{opacity:.15;transform:translateY(22px)}
+@media (prefers-reduced-motion:reduce){
+  .panel,.stage,.flap,.card,.seal{transition:opacity .4s ease;animation:none}
+  .intro.opening .panel.l,.intro.opening .panel.r{transform:none;opacity:0}
+  .intro.env-open .flap,.intro.env-open .card{transform:none}
+  body.opened .hero .wrap>*,body.opened .hero .foil,body.opened .hero h1.foil,.thanks{animation:none}
+  .reveal,.reveal.pre{transition:none;opacity:1;transform:none}
+  .drop-panel,.drop-list li{transition:none}
+}
+</style>
+</head>
+<body>
+<div class="intro" id="intro">
+  <div class="panel l"></div><div class="panel r"></div>
+  <div class="stage">
+    <div class="env" id="env">
+      <div class="env-back"></div>
+      <div class="card"><small>You're invited</small><b>Abdullah<br>&amp; Afsana</b><small>20 · 11 · 2026</small></div>
+      <div class="env-front"></div>
+      <div class="flap"></div>
+      <button class="seal" id="seal" type="button" aria-label="Open invitation">A&amp;A</button>
+    </div>
+    <p class="tap">Tap the seal to open</p>
+  </div>
+</div>
+<canvas id="petals" aria-hidden="true" hidden></canvas>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="when">Together with our families</p>
+    <h1 class="foil">Abdullah <span>&amp;</span> Afsana</h1>
+    <p class="when">Friday, 20 November 2026 · Dhaka</p>
+    <div class="count" aria-live="polite">
+      <div><b id="d">--</b><small>Days</small></div>
+      <div><b id="h">--</b><small>Hours</small></div>
+      <div><b id="m">--</b><small>Minutes</small></div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="centred">
+    <p class="eyebrow">The venue</p>
+    <h2 class="venue-name">The Palm View, Army Golf Club</h2>
+    <p class="hours">Friday, 20 November 2026 · 12:00 pm to 5:00 pm</p>
+    <p class="body muted">Army Golf Club, Dhaka Cantonment, Dhaka<br>Parking is available at the venue.</p>
+    <div class="actions">
+      <button class="btn-line" type="button" aria-expanded="false" aria-controls="dirPanel">Get directions <svg class="chev" viewBox="0 0 10 10" aria-hidden="true"><path d="M1 3l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></button>
+      <button class="btn-line" type="button" aria-expanded="false" aria-controls="calPanel">Add to calendar <svg class="chev" viewBox="0 0 10 10" aria-hidden="true"><path d="M1 3l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></button>
+    </div>
+    <div class="drop-panel" id="dirPanel" inert>
+      <div class="drop-inner"><ul class="drop-list">
+        <li><a href="https://www.google.com/maps/search/?api=1&amp;query=The+Palm+View+Army+Golf+Club+Dhaka" target="_blank" rel="noopener">Open in Google Maps <span class="hint">↗</span></a></li>
+        <li><a href="https://maps.apple.com/?q=The+Palm+View,+Army+Golf+Club,+Dhaka" target="_blank" rel="noopener">Open in Apple Maps <span class="hint">↗</span></a></li>
+        <li><button type="button" id="copyAddr">Copy address <span class="hint" id="copyHint">Copy</span></button></li>
+        <li class="info">Parking is available at the venue.</li>
+      </ul></div>
+    </div>
+    <div class="drop-panel" id="calPanel" inert>
+      <div class="drop-inner"><ul class="drop-list">
+        <li><a id="gcal" href="#" target="_blank" rel="noopener">Google Calendar <span class="hint">↗</span></a></li>
+        <li><button type="button" id="ics">Apple or Outlook calendar <span class="hint">.ics</span></button></li>
+        <li class="info">Fri 20 Nov 2026, 12:00 pm to 5:00 pm (Dhaka time)</li>
+      </ul></div>
+    </div>
+  </section>
+
+  <section class="centred">
+    <p class="eyebrow">Dress code</p>
+    <h2>Bright and bold</h2>
+    <p class="body">Wear your brightest, boldest colours, whatever makes you feel pretty.</p>
+    <div class="orn" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M10 1 L14 10 L10 19 L6 10 Z" fill="currentColor"/></svg></div>
+  </section>
+
+  <section class="centred">
+    <p class="eyebrow">Gifts</p>
+    <h2>Just your prayers</h2>
+    <p class="body">We're leaving for Sri Lanka right after the celebration, so we kindly ask for no gifts. Your prayers are all we need.</p>
+    <p class="sign">A &amp; A</p>
+  </section>
+
+  <section class="centred">
+    <p class="eyebrow">RSVP</p>
+    <h2>Will you join us?</h2>
+    <p class="body">Kindly reply by 15 November. Kids are welcome. Fill in your details below and tap Send RSVP.</p>
+    <form id="rsvp" novalidate>
+      <label for="name">Full name<input id="name" autocomplete="name" placeholder="Your name"></label>
+      <div class="row">
+        <label for="attend">Will you attend?<select id="attend"><option>Yes, I'll be there</option><option>Sorry, I can't make it</option></select></label>
+        <label for="guests">Adults including you<input id="guests" type="number" min="1" max="10" value="1" inputmode="numeric"></label>
+      </div>
+      <label for="kids">Children<input id="kids" type="number" min="0" max="10" value="0" inputmode="numeric"></label>
+      <label for="msg">Note for the couple (optional)<textarea id="msg" rows="3"></textarea></label>
+      <button class="solid" id="sendBtn" type="submit">Send RSVP</button>
+      <p class="small muted" id="formMsg" role="status"></p>
+    </form>
+    <div class="thanks" id="thanks" hidden></div>
+  </section>
+
+  <section class="centred">
+    <p class="eyebrow">Photos</p>
+    <h2>Share your photos</h2>
+    <p class="body">Took photos on the day? Add them here and they'll go straight to us. Our favourites will appear below.</p>
+    <div class="locked" id="photoLocked"><p class="small">Photo uploads open on 20 November at 12:00 pm.</p></div>
+    <form id="upForm" novalidate hidden>
+      <label for="upName">Your name (optional)<input id="upName" autocomplete="name" placeholder="So we know who to thank"></label>
+      <label class="pick" for="upFiles"><span>Choose photos</span><span class="small muted" id="pickHint">Up to 20 at a time, full quality</span>
+        <input id="upFiles" type="file" accept="image/*" multiple></label>
+      <div class="bar" hidden id="upBar"><i></i></div>
+      <button class="solid" id="upBtn" type="submit">Upload photos</button>
+      <p class="small muted" id="upMsg" role="status"></p>
+    </form>
+    <div class="gallery" id="gallery" hidden></div>
+  </section>
+</main>
+
+<footer>Abdullah &amp; Afsana · Dhaka · 2026</footer>
+
+<script>
+// Paste the Apps Script web app URL (ends in /exec) between the quotes. It saves RSVPs, receives photo uploads and lists the gallery.
+const SCRIPT_URL="https://script.google.com/macros/s/AKfycbwmoT1Zxk9cDEoqxLaO1YpkmiATdbTQx1ASiwQLswG4XshAToDOOpQ-8SjL7u_sV33U/exec";
+const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+const $=id=>document.getElementById(id);
+
+// Countdown to 20 November, 12:00 pm Dhaka time (UTC+6)
+const target=new Date("2026-11-20T12:00:00+06:00");
+function tick(){const ms=target-new Date(),c=document.querySelector(".count");
+  if(ms<=0){c.textContent="Today's the day";return}
+  $("d").textContent=Math.floor(ms/864e5);$("h").textContent=String(Math.floor(ms%864e5/36e5)).padStart(2,"0");$("m").textContent=String(Math.floor(ms%36e5/6e4)).padStart(2,"0")}
+tick();setInterval(tick,30000);
+
+// Intro: seal breaks, flap opens, card rises, then the curtain parts and petals fall
+const intro=$("intro");let started=false;
+function openInvite(){
+  if(started)return;started=true;
+  intro.classList.add("env-open");
+  const t=reduce?[0,0,300,900]:[700,1900,2300,3600];
+  setTimeout(()=>intro.classList.add("flap-back"),t[0]);
+  setTimeout(()=>{intro.classList.add("opening");document.body.classList.add("opened")},t[1]);
+  setTimeout(()=>{if(!reduce)petals()},t[2]);
+  setTimeout(()=>intro.classList.add("gone"),t[3]);
+}
+$("seal").addEventListener("click",e=>{e.stopPropagation();openInvite()});
+intro.addEventListener("click",openInvite);
+setTimeout(openInvite,6000);
+
+// Petals: a short drift of gold and rose petals
+function petals(){
+  const cv=$("petals"),ctx=cv.getContext("2d");cv.hidden=false;
+  const dpr=Math.min(devicePixelRatio||1,2);let W,H;
+  const size=()=>{W=innerWidth;H=innerHeight;cv.width=W*dpr;cv.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0)};size();addEventListener("resize",size);
+  const cols=["#C9A24A","#E8CF85","#B3263A","#E39AA4","#F4E2B0"];
+  const P=Array.from({length:Math.min(46,Math.round(W/12))},()=>({x:Math.random()*W,y:-20-Math.random()*H*.9,r:5+Math.random()*6,
+    vy:.7+Math.random()*1.1,sway:Math.random()*Math.PI*2,sw:.012+Math.random()*.02,rot:Math.random()*6.28,vr:(Math.random()-.5)*.05,c:cols[Math.floor(Math.random()*cols.length)]}));
+  const end=performance.now()+9000;
+  (function frame(now){
+    ctx.clearRect(0,0,W,H);let alive=0;
+    const fade=Math.max(0,Math.min(1,(end-now)/1500));
+    for(const p of P){
+      p.sway+=p.sw;p.y+=p.vy;p.x+=Math.sin(p.sway)*.9;p.rot+=p.vr;
+      if(p.y<H+20)alive++;
+      ctx.save();ctx.globalAlpha=.85*fade;ctx.translate(p.x,p.y);ctx.rotate(p.rot);ctx.scale(1,.55+.45*Math.abs(Math.sin(p.sway)));
+      ctx.fillStyle=p.c;ctx.beginPath();ctx.ellipse(0,0,p.r,p.r*.6,0,0,Math.PI*2);ctx.fill();ctx.restore();
+    }
+    if(alive&&fade>0)requestAnimationFrame(frame);else{cv.hidden=true;removeEventListener("resize",size)}
+  })(performance.now());
+}
+
+// Scroll reveals
+if("IntersectionObserver" in window&&!reduce){
+  const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){en.target.classList.remove("pre");io.unobserve(en.target)}}),{rootMargin:"0px 0px -8% 0px"});
+  document.querySelectorAll("main section > *:not(.drop-panel)").forEach(el=>{el.classList.add("reveal");
+    if(el.getBoundingClientRect().top>innerHeight){el.classList.add("pre");io.observe(el)}});
+}
+
+// Dropdown panels (one open at a time)
+const toggles=[...document.querySelectorAll("[aria-controls]")];
+toggles.forEach(b=>b.addEventListener("click",()=>{
+  const open=b.getAttribute("aria-expanded")!=="true";
+  toggles.forEach(o=>{o.setAttribute("aria-expanded","false");const p=$(o.getAttribute("aria-controls"));p.classList.remove("open");p.inert=true});
+  if(open){b.setAttribute("aria-expanded","true");const p=$(b.getAttribute("aria-controls"));p.inert=false;p.classList.add("open")}
+}));
+
+// Copy address
+const ADDRESS="The Palm View, Army Golf Club, Dhaka Cantonment, Dhaka";
+$("copyAddr").addEventListener("click",()=>{
+  const done=()=>{$("copyHint").textContent="Copied";setTimeout(()=>$("copyHint").textContent="Copy",2000)};
+  try{navigator.clipboard.writeText(ADDRESS).then(done,()=>{$("copyHint").textContent=ADDRESS})}catch(e){$("copyHint").textContent=ADDRESS}
+});
+
+// Calendar
+const EV={title:"Abdullah & Afsana's wedding",start:"20261120T060000Z",end:"20261120T110000Z",loc:ADDRESS,details:"12:00 pm to 5:00 pm, Dhaka time. Parking is available at the venue."};
+$("gcal").href="https://calendar.google.com/calendar/render?action=TEMPLATE&text="+encodeURIComponent(EV.title)+"&dates="+EV.start+"/"+EV.end+"&location="+encodeURIComponent(EV.loc)+"&details="+encodeURIComponent(EV.details);
+$("ics").addEventListener("click",()=>{
+  const esc=s=>s.replace(/([,;\\])/g,"\\$1");
+  const ics=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//AA Wedding//EN","BEGIN:VEVENT","UID:aa-wedding-20261120@invite","DTSTAMP:20261101T000000Z",
+    "DTSTART:"+EV.start,"DTEND:"+EV.end,"SUMMARY:"+esc(EV.title),"LOCATION:"+esc(EV.loc),"DESCRIPTION:"+esc(EV.details),"END:VEVENT","END:VCALENDAR"].join("\r\n");
+  const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([ics],{type:"text/calendar"}));a.download="abdullah-afsana-wedding.ics";
+  document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},1000);
+});
+
+// RSVP: sent to the Apps Script, which adds a row to the RSVP sheet
+const f={name:$("name"),attend:$("attend"),guests:$("guests"),kids:$("kids"),msg:$("msg")};
+$("rsvp").addEventListener("submit",async e=>{
+  e.preventDefault();const note=$("formMsg"),btn=$("sendBtn");
+  const name=f.name.value.trim();
+  if(!name){f.name.setAttribute("aria-invalid","true");f.name.focus();note.textContent="Please add your name.";return}
+  f.name.removeAttribute("aria-invalid");
+  if(!SCRIPT_URL){note.textContent="RSVPs aren't connected yet. Please check back soon.";return}
+  const coming=!f.attend.value.startsWith("Sorry");
+  const data=new URLSearchParams({name,attend:coming?"Yes":"No",adults:coming?(f.guests.value||1):0,kids:coming?(f.kids.value||0):0,note:f.msg.value.trim()});
+  btn.disabled=true;btn.textContent="Sending…";note.textContent="";
+  try{
+    await fetch(SCRIPT_URL,{method:"POST",mode:"no-cors",body:data});
+    $("rsvp").hidden=true;const first=name.split(" ")[0];
+    $("thanks").textContent=coming?`Thank you, ${first}. We can't wait to see you on the 20th.`:`Thank you for letting us know, ${first}. You'll be missed.`;
+    $("thanks").hidden=false;
+  }catch(err){note.textContent="That didn't go through. Check your connection and tap Send RSVP again.";btn.disabled=false;btn.textContent="Send RSVP"}
+});
+
+// Photos: uploads open at the start of the celebration (add ?photos to the link to test early)
+const testMode=new URLSearchParams(location.search).has("photos");
+const photosOpen=new Date()>=target||testMode;
+if(photosOpen){$("photoLocked").hidden=true;$("upForm").hidden=false}
+$("upFiles").addEventListener("change",()=>{const n=$("upFiles").files.length;$("pickHint").textContent=n?`${n} photo${n>1?"s":""} selected`:"Up to 20 at a time, full quality"});
+function readFile(file){ // sends the original photo, full quality
+  return new Promise((res,rej)=>{const r=new FileReader();r.onload=()=>res({data:String(r.result).split(",")[1],mime:file.type||"image/jpeg"});r.onerror=rej;r.readAsDataURL(file)});
+}
+$("upForm").addEventListener("submit",async e=>{
+  e.preventDefault();const msg=$("upMsg"),btn=$("upBtn"),bar=$("upBar"),fill=bar.querySelector("i");
+  const files=[...$("upFiles").files].filter(x=>x.type.startsWith("image/")||/\.(heic|heif|jpe?g|png)$/i.test(x.name)).slice(0,20);
+  if(!files.length){msg.textContent="Choose at least one photo first.";return}
+  if(!SCRIPT_URL){msg.textContent="Uploads aren't connected yet. Please check back soon.";return}
+  btn.disabled=true;bar.hidden=false;fill.style.width="0";let ok=0;
+  for(const [i,file] of files.entries()){
+    msg.textContent=`Uploading ${i+1} of ${files.length}…`;
+    try{const {data,mime}=await readFile(file);
+      await fetch(SCRIPT_URL,{method:"POST",mode:"no-cors",body:new URLSearchParams({action:"upload",test:testMode?"1":"0",name:$("upName").value.trim(),filename:file.name,mime,data})});ok++;
+    }catch(err){}
+    fill.style.width=((i+1)/files.length*100)+"%";
+  }
+  msg.textContent=ok===files.length?`Thank you. ${ok} photo${ok>1?"s":""} sent.`:`${ok} of ${files.length} sent. Check your connection and try the rest again.`;
+  btn.disabled=false;$("upFiles").value="";$("pickHint").textContent="Add more photos";
+});
+
+// Gallery: photos moved into the Gallery folder in Drive appear here
+async function loadGallery(){
+  if(!SCRIPT_URL)return;
+  try{const r=await fetch(SCRIPT_URL+"?action=gallery");const {photos=[]}=await r.json();if(!photos.length)return;
+    const g=$("gallery");g.hidden=false;
+    photos.forEach(id=>{const b=document.createElement("button");b.type="button";b.setAttribute("aria-label","View photo");
+      const img=new Image();img.loading="lazy";img.alt="Wedding photo";img.src=`https://lh3.googleusercontent.com/d/${id}=w600`;img.onload=()=>img.classList.add("in");
+      b.appendChild(img);b.addEventListener("click",()=>openBox(id));g.appendChild(b)});
+  }catch(e){}
+}
+function openBox(id){
+  const box=document.createElement("div");box.className="lightbox";box.setAttribute("role","dialog");box.setAttribute("aria-label","Photo");
+  box.innerHTML=`<img alt="Wedding photo" src="https://lh3.googleusercontent.com/d/${id}=w1600"><button type="button">Close</button>`;
+  const close=()=>{box.classList.remove("show");setTimeout(()=>box.remove(),300);removeEventListener("keydown",key)};
+  const key=e=>{if(e.key==="Escape")close()};
+  box.addEventListener("click",close);addEventListener("keydown",key);document.body.appendChild(box);
+  requestAnimationFrame(()=>box.classList.add("show"));box.querySelector("button").focus();
+}
+loadGallery();
+</script>
+</body>
+</html>
