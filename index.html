@@ -314,6 +314,9 @@ function openInvite(){
 $("seal").addEventListener("click",e=>{e.stopPropagation();openInvite()});
 intro.addEventListener("click",openInvite);
 setTimeout(openInvite,6000);
+// Links straight to a section (like the photo email's #photos) skip the envelope
+if(location.hash==="#photos"){started=true;intro.classList.add("gone");document.body.classList.add("opened");
+  requestAnimationFrame(()=>document.getElementById("photos").scrollIntoView())}
 
 // Petals: a short drift of gold and rose petals
 function petals(){
