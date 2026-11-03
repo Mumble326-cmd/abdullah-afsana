@@ -6,6 +6,11 @@
 <meta name="description" content="Join us to celebrate the wedding of Abdullah and Afsana, 20 November 2026, Dhaka.">
 <meta property="og:title" content="Abdullah &amp; Afsana">
 <meta property="og:description" content="Friday, 20 November 2026 · The Palm View, Army Golf Club, Dhaka">
+<meta name="theme-color" content="#6B1424">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
 <title>Abdullah &amp; Afsana</title>
 <meta name="claude:viewport-fit-sides" content="cover">
@@ -87,7 +92,7 @@ h2{font-family:var(--display);font-weight:400;font-size:clamp(30px,8vw,44px);lin
 form{display:grid;gap:14px;width:100%;text-align:left;margin-top:10px}
 label{display:grid;gap:6px;font-weight:500;font-size:14px}
 input,select,textarea{font:inherit;color:var(--fg);background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:10px 12px;width:100%}
-input[aria-invalid="true"]{border-color:var(--accent)}
+input[aria-invalid="true"]{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
 .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .solid{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--accent-strong);color:var(--accent-fg);border:0;cursor:pointer;
   font:600 15px var(--body);border-radius:6px;padding:13px 22px;justify-self:start}
@@ -250,6 +255,7 @@ body.opened .hero h1.foil{animation:rise .9s cubic-bezier(.2,.7,.2,1) .15s both,
     <p class="body">Kindly reply by 15 November. Kids are welcome. Fill in your details below and tap Send RSVP.</p>
     <form id="rsvp" novalidate>
       <label for="name">Full name<input id="name" autocomplete="name" placeholder="Your name"></label>
+      <label for="email">Email (optional)<input id="email" type="email" autocomplete="email" inputmode="email" placeholder="For a reminder on the day"></label>
       <div class="row">
         <label for="attend">Will you attend?<select id="attend"><option>Yes, I'll be there</option><option>Sorry, I can't make it</option></select></label>
         <label for="guests">Adults including you<input id="guests" type="number" min="1" max="10" value="1" inputmode="numeric"></label>
@@ -365,15 +371,18 @@ $("ics").addEventListener("click",()=>{
 });
 
 // RSVP: sent to the Apps Script, which adds a row to the RSVP sheet
-const f={name:$("name"),attend:$("attend"),guests:$("guests"),kids:$("kids"),msg:$("msg")};
+const f={name:$("name"),email:$("email"),attend:$("attend"),guests:$("guests"),kids:$("kids"),msg:$("msg")};
 $("rsvp").addEventListener("submit",async e=>{
   e.preventDefault();const note=$("formMsg"),btn=$("sendBtn");
   const name=f.name.value.trim();
   if(!name){f.name.setAttribute("aria-invalid","true");f.name.focus();note.textContent="Please add your name.";return}
   f.name.removeAttribute("aria-invalid");
+  const email=f.email.value.trim();
+  if(email&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){f.email.setAttribute("aria-invalid","true");f.email.focus();note.textContent="That email doesn't look right. Check it, or leave it blank.";return}
+  f.email.removeAttribute("aria-invalid");
   if(!SCRIPT_URL){note.textContent="RSVPs aren't connected yet. Please check back soon.";return}
   const coming=!f.attend.value.startsWith("Sorry");
-  const data=new URLSearchParams({name,attend:coming?"Yes":"No",adults:coming?(f.guests.value||1):0,kids:coming?(f.kids.value||0):0,note:f.msg.value.trim()});
+  const data=new URLSearchParams({name,email,attend:coming?"Yes":"No",adults:coming?(f.guests.value||1):0,kids:coming?(f.kids.value||0):0,note:f.msg.value.trim()});
   btn.disabled=true;btn.textContent="Sending…";note.textContent="";
   try{
     await fetch(SCRIPT_URL,{method:"POST",mode:"no-cors",body:data});
